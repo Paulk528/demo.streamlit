@@ -1,3 +1,4 @@
+
 import streamlit as st
 
 st.title("MY PROJECT")
@@ -39,5 +40,29 @@ option = st.selectbox(
 )
 
 st.write("Selected:", option)
+
+
+import streamlit as st
+
+color = st.select_slider(
+    "Your favorite color:",
+    options=["red", "orange", "violet"]
+)
+
+st.write("My favorite color is", color)
+
+
+import streamlit as st
+
+if st.button("Say hello"):
+    st.write("Hello")
+else:
+    st.write("Goodbye")
+
+st.link_button(
+    "Go to Google",
+    "https://www.google.com.vn/"
+)
+
 
 
