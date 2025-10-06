@@ -1,11 +1,6 @@
 import streamlit as st
 
-st.image(
-    './Theme.jpeg',
-    caption='Theme.'
-)
-
-st.audio('./audio.mp4')
-
-st.video('./video.mp4')
-
+st.title("MY PROJECT")
+st.header("This is a header")
+st.subheader("This is a subheader")
+st.text("I love AI VIET NAM")
