@@ -32,7 +32,7 @@ if st.button("Tạo tài khoản"):
     if not is_valid_email(email):
         st.error("❌ Email của bạn không hợp lệ. Vui lòng kiểm tra định dạng (ví dụ: ten.ban@gmail.com).")
     elif not is_valid_password(password):
-        st.warning("⚠️ Mật khẩu không đáp ứng yêu cầu: tối thiểu 8 ký tự, có chữ hoa, thường, số và ký tự đặc biệt.")
+        st.warning("⚠️ Mật khẩu không đáp ứng yêu cầu: tối thiểu 8 ký tự, có chữ hoa, thường, số và ký tự đặc biệt (một trong những ký tự sau: @$!%*?&).")
     else:
         st.success("✅ Tạo tài khoản thành công!")
         st.balloons()
