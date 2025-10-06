@@ -76,5 +76,24 @@ values = st.slider(
 )
 st.write("Values:", values)
 
+import streamlit as st
+
+messages = st.container(height=200)
+
+if prompt := st.chat_input("Say something"):
+    messages.chat_message("user").write(prompt)
+    messages.chat_message("assistant").write(f"Echo: {prompt}")
+
+
+import streamlit as st
+
+uploaded_files = st.file_uploader(
+    "Choose files",
+    accept_multiple_files=True
+)
+
+for uploaded_file in uploaded_files:
+    bytes_data = uploaded_file.read()
+    st.write("filename:", uploaded_file.name)
 
 
