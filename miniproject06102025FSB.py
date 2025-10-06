@@ -2,11 +2,11 @@ import re
 import streamlit as st
 
 # Tiêu đề trang
-st.title("🎯 Đăng ký tài khoản")
+st.title("🎯 ĐĂNG KÝ TÀI KHOẢN")
 
 # Ô nhập liệu
-email = st.text_input("Email của bạn:")
-password = st.text_input("Mật khẩu:", type="password")
+email = st.text_input(" 📧 Email của bạn:")
+password = st.text_input("🔑 Mật khẩu:", type="password")
 
 # Hàm kiểm tra email hợp lệ (theo định dạng Gmail)
 def is_valid_email(email):
