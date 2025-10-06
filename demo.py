@@ -65,4 +65,16 @@ st.link_button(
 )
 
 
+import streamlit as st
+
+number = st.number_input("Insert a number")
+st.write("The current number is ", number)
+
+values = st.slider(
+    "Select a range of values",
+    0.0, 100.0, (25.0, 75.0)
+)
+st.write("Values:", values)
+
+
 
