@@ -2,7 +2,7 @@ import re
 import streamlit as st
 
 # Tiêu đề trang
-st.title("🎯 ĐĂNG KÝ TÀI KHOẢN NGƯỜI DÙNG")
+st.title("🎯 ĐĂNG KÝ TÀI KHOẢN")
 
 # Ô nhập liệu
 email = st.text_input(" 📧 Email của bạn:")
