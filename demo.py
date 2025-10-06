@@ -97,3 +97,13 @@ for uploaded_file in uploaded_files:
     st.write("filename:", uploaded_file.name)
 
 
+import streamlit as st
+
+if st.button("Say hello"):
+    st.write("Hello")
+else:
+    st.write("Goodbye")
+
+st.link_button(
+    "Go to Google",
+    "https://www.g
